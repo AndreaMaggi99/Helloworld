@@ -8,7 +8,7 @@ var rubrica=[
         'professione':'rompiballe'
     }
 ];
-server.connection({host:'localhost',port:3000});
+server.connection({host: process.env.HOST,port:process.env.PORT});
 server.route({
     method:'GET',
     path:'/{nome}',
